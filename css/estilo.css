@@ -1,0 +1,368 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+#entrada{
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/fondo1.jpg");
+	background-size: 100% 115%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+#entrada > a >img {
+	display: block;
+	margin: 0 auto;
+}
+
+h1,h3{
+	line-height:2em;
+	letter-spacing: 0.5em;
+	padding: 5%;
+	font-family: times;
+	text-align: center;
+}
+
+
+h1{
+	padding-top: 15%;
+	font-size: 125%;
+}
+
+h3{
+	font-size: 100%;
+}
+
+#projects{
+	letter-spacing: 0.5em;
+	margin: 10% 5%;
+
+}
+
+#cuadros a {
+	text-decoration: none;
+}
+
+.project{
+	transition: 0.5s;
+	height: 100%;
+	padding: 0 5%;
+	color:white;
+	text-align: center
+}
+
+.project:hover{
+	background:  rgba(148, 93, 253, 0.6);
+	background-size: 100% 100%;
+}
+
+.imgw{
+	background-image: url('../img/worldConsol.jpg');
+	background-position: center;
+	background-size: 100% 100%;
+	transition: 0.5s;
+	height: 100%;
+	width: 100%;
+}
+
+.imgg{
+	background-image: url('../img/gestortareas.jpg');
+	background-position: center;
+	background-size: 100% 100%;
+	transition: 0.5s;
+	height: 100%;
+	width: 100%;
+}
+
+.imgr{
+	background-image: url('../img/casasRurales.jpg');
+	background-position: center;
+	background-size: 100% 100%;
+	transition: 0.5s;
+	height: 100%;
+	width: 100%;
+}
+
+.imgw *, .imgg *, .imgr *{
+	visibility: hidden;
+}
+
+.imgw:hover, .imgr:hover, .imgg:hover{
+	background-size: 120% 120%;
+}
+
+.imgw:hover *, .imgr:hover *, .imgg:hover *{
+	visibility:visible;
+}
+
+#projects > h2{
+	margin-bottom: 5%;
+}
+
+#projects a{
+	background:  rgba(51,153,255,0.7);
+
+}
+
+.cuadro{
+	display:block;
+	height: 16em;
+	width: 100%;
+}
+
+
+nav{
+	width: 100%;
+	height: auto;
+	padding: 1%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	color: white;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-size:  200%;
+}
+
+nav ol{
+	width: 50%;
+	display: none;
+}
+
+li{
+	margin-left: 9%;
+}
+
+nav > ol > li{
+  	display: inline-block;
+  	list-style: none;
+  	width: auto;
+}
+
+#menu{
+	width: 30px;
+}
+
+#datos{
+	padding: 10% 5%;
+}
+
+#dato{
+	margin: 5%;
+}
+
+#dato img{
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+#dato p{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+	
+#dato h4{
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+#leng{
+	background-color: #424242;
+	color: white;
+	padding: 10% 5%;
+}
+
+#lenguaje {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+
+.grupo{
+	*width: 128px;
+	border: 6px solid;
+	border-radius: 20px;
+	border-color: white;
+	flex: 1;
+	margin: 5% 25%;
+	padding: 1em;
+}
+
+.cuadro img{
+	width: 100%;
+}
+
+.cuadro p{
+	margin-top: 10px;
+}
+
+#contacto{
+	color: white;
+	background-color: #424242;
+	padding: 10% 5%;
+	padding-bottom: 15%;
+}
+
+#redes{
+	text-align: center;
+	margin: 5% 0;
+}
+
+#redes > a > img{
+	width: 80px;
+	border-radius: 20px;
+}
+
+#formulario{
+	font-size: 20px;
+}
+
+.alinear{
+	display: flex;
+}
+
+.alinear > label{
+	flex: 1;
+}
+
+label, input{
+	margin-bottom: 10px;
+}
+
+.letter{
+	display:none;
+}
+
+#formulario #enviar{
+	width: auto;
+	padding: 2% 5%;
+	border-radius: 15%;
+	background-color: white;
+	font-size: 20px;
+	margin-top: 5%;
+	margin-left: 37%;
+}
+
+@media screen and (min-width: 768px) {
+	#entrada{
+		background-size: 100% 100%;
+	}
+
+	h1,h3{
+		letter-spacing: 1em; 
+		padding: 3%; 
+	}
+
+	h1{
+		font-size: 250%;
+		padding-top: 5%;
+	}
+
+	h3{
+		font-size: 150%;
+	}
+
+	nav ol{
+		float: right;
+	}
+
+	#entrada > img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#lenguaje{
+		display: flex;
+		background-color: #424242;
+		padding: 10% 20%;
+		flex-direction: row;
+	}
+
+	.grupo{
+		border: 6px solid;
+		border-radius: 20px;
+		border-color: white;
+		flex: 1;
+		margin: 3em;
+		padding: 1em;
+	}
+
+	#cuadros{
+		display: flex;
+	}
+
+	.cuadro{
+		width:33%;
+	}
+
+	#dato{
+		display: flex;
+	}
+
+	#datos p{
+		font-size: 30px;
+	}
+
+	#datos h4{
+		font-size: 40px;
+	}
+
+	#datos img{
+		margin-botton:0;
+	}
+
+	#redes > a > img{
+		width: 100px;
+		margin-right: 20px;
+	}
+
+	#formulario{
+		font-size: 25px;
+		margin: 0 30%;
+	}
+
+	#formulario input, textarea {
+		width: 50%;
+	}
+
+}
+
+@media screen and (min-width: 1600px) {
+	#entrada{
+		background-size: 100% 120%;
+	}
+
+	h1,h3{
+		letter-spacing: 1em;
+		padding: 5%;
+	}
+
+
+	h1{
+		font-size: 350%;
+		padding-top: 10%;
+	}
+
+	h3{
+		font-size: 250%;
+	}
+
+	#datos p{
+		font-size: 40px;
+	}
+
+	#datos h4{
+		font-size: 50px;
+	}
+
+	#formulario{
+		font-size: 40px;
+		margin: 0 30%;
+	}
+}

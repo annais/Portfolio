@@ -11,6 +11,7 @@
 	background-size: 100% 115%;
 	background-repeat: no-repeat;
 	color: white;
+	padding: 5% 0;
 }
 
 #entrada > a >img {
@@ -51,11 +52,12 @@ h3{
 	height: 100%;
 	padding: 0 5%;
 	color:white;
-	text-align: center
+	text-align: center;
 }
 
 .project:hover{
-	background:  rgba(148, 93, 253, 0.6);
+	*background:  rgba(148, 93, 253, 0.6);
+	background: rgba(170, 0, 255, 0.6);
 	background-size: 100% 100%;
 }
 
@@ -113,7 +115,6 @@ h3{
 	width: 100%;
 }
 
-
 nav{
 	width: 100%;
 	height: auto;
@@ -130,8 +131,9 @@ nav a{
 }
 
 nav ol{
-	width: 50%;
+	width: 60%;
 	display: none;
+	margin-right: 5%;
 }
 
 li{
@@ -156,14 +158,25 @@ nav > ol > li{
 	margin: 5%;
 }
 
+#dato p, h4{
+	font-family: 'Oleo Script', cursive;
+}
+
 #dato img{
 	margin-right: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 2%;
 }
 
 #dato p{
 	font-size: 20px;
 	margin-bottom: 5px;
+	color: #4A148C;
+}
+
+.imgdatos{
+	width: 320px;
+	margin: 0;
+	padding: 0;
 }
 	
 #dato h4{
@@ -177,21 +190,32 @@ nav > ol > li{
 	padding: 10% 5%;
 }
 
-#lenguaje {
+.lenguaje {
 	display: flex;
 	flex-direction: column;
-	margin: 0;
+	margin: 5%;
 	padding: 0;
 }
 
-.grupo{
-	*width: 128px;
+.igrupo{
+	width: 256px;
 	border: 6px solid;
 	border-radius: 20px;
 	border-color: white;
-	flex: 1;
-	margin: 5% 25%;
+	margin: 5% 5%;
 	padding: 1em;
+}
+
+.grupo{
+	flex: 1;
+}
+
+.lenguaje h3{
+	width: 256px;
+	flex: 1;
+	margin: 0 5%;
+	padding: 1em;
+	margin:  0;
 }
 
 .cuadro img{
@@ -209,7 +233,19 @@ nav > ol > li{
 	padding-bottom: 15%;
 }
 
+#dcontacto{
+	display:flex;
+	flex-direction: column;
+	margin:5%;
+}
+
+.datoscont{
+	width:45%;
+	flex:1;
+}
+
 #redes{
+	display: flex;
 	text-align: center;
 	margin: 5% 0;
 }
@@ -224,7 +260,9 @@ nav > ol > li{
 }
 
 .alinear{
-	display: flex;
+	/* display: flex; */
+	width: 95%;
+	margin: 0;
 }
 
 .alinear > label{
@@ -239,14 +277,23 @@ label, input{
 	display:none;
 }
 
+.nleng{
+	display: none;
+}
+
 #formulario #enviar{
 	width: auto;
 	padding: 2% 5%;
 	border-radius: 15%;
 	background-color: white;
 	font-size: 20px;
-	margin-top: 5%;
-	margin-left: 37%;
+	margin-top: 5s%;
+	margin-bottom: 30%;
+}
+
+#mapa{
+	width: 300px;
+	height: 300px;
 }
 
 @media screen and (min-width: 768px) {
@@ -270,6 +317,7 @@ label, input{
 
 	nav ol{
 		float: right;
+		text-align: right;
 	}
 
 	#entrada > img {
@@ -277,20 +325,29 @@ label, input{
 		margin: 0 auto;
 	}
 
-	#lenguaje{
+	.imgdatos{
+		width: 900px;
+		display: none;
+	}
+
+	.lenguaje{
 		display: flex;
-		background-color: #424242;
+		background-color: #424242;*
 		padding: 10% 20%;
 		flex-direction: row;
 	}
 
-	.grupo{
+	.igrupo{
 		border: 6px solid;
 		border-radius: 20px;
 		border-color: white;
-		flex: 1;
-		margin: 3em;
+		margin: 0;
 		padding: 1em;
+	}
+
+	.grupo{
+		flex: 1;
+		margin: 0;
 	}
 
 	#cuadros{
@@ -301,8 +358,13 @@ label, input{
 		width:33%;
 	}
 
+	.alinear{
+		display: flex;
+	}
+
 	#dato{
 		display: flex;
+		font-family: 'Oleo Script', cursive;
 	}
 
 	#datos p{
@@ -324,13 +386,21 @@ label, input{
 
 	#formulario{
 		font-size: 25px;
-		margin: 0 30%;
+		margin: 0 10%;
 	}
 
 	#formulario input, textarea {
 		width: 50%;
 	}
 
+	#dcontacto{
+		flex-direction: row;
+	}
+	
+	#mapa{
+		width: 600px;
+		height: 450px;
+	}
 }
 
 @media screen and (min-width: 1600px) {
@@ -365,4 +435,5 @@ label, input{
 		font-size: 40px;
 		margin: 0 30%;
 	}
+
 }
